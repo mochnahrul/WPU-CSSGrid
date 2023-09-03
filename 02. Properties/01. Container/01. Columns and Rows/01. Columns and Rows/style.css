@@ -1,0 +1,36 @@
+/* Property pada Container */
+/* grid-template-columns, grid-template-rows, grid-auto-columns, grid-auto-rows, grid-auto-flow, grid-template-areas, grid-template, grid-column-gap, grid-row-gap, grid-gap, grid, justify-items, align-items, place-items, justify-content, align-content, place-content */
+
+/* grid-template-columns & grid-template-rows */
+/* Mendefinisikan kolom/baris dengan cara menuliskan nilai dipisahkan oleh spasi. Nilai merepresentasikan ukuran grid track dan spasi merepresentasikan grid line */
+
+/* grid-template-columns: <track-size> ... | <line-name> <track-size> ...; */
+/* grid-template-rows: <track-size> ... | <line-name> <track-size> ...; */
+
+/* <track-size> -> Bisa berupa px, %, auto atau fr (fraction) */
+/* <line-name> -> Nama yang bisa diberikan pada track */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 100px 25% 200px;
+  grid-template-rows: 100px;
+}
+
+.item {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(even) {
+  background-color: salmon;
+}

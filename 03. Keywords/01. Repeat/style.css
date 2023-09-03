@@ -1,0 +1,33 @@
+/* Special Functions & Keywords */
+/* - repeat() */
+/* - min-content & max-content */
+/* - auto fill & auto fit */
+/* - minmax() */
+
+/* repeat() */
+/* Menentukan ukuran grid track secara berulang */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) repeat(5, 1.5fr);
+}
+
+.item {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(even) {
+  background-color: salmon;
+}

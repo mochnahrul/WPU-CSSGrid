@@ -1,0 +1,31 @@
+/* Shorthand */
+/* grid-template: <grid-template-areas> <grid-template-rows> / <grid-template-columns>; */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  /* grid-template-rows: [baris1-awal] 50px [baris1-akhir baris2-awal] 100px [baris2-akhir];
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-areas:
+    'header header header'
+    'footer footer footer' */
+  grid-template: [baris1-awal] 'header header header'50px [baris1-akhir baris2-awal] 'footer footer footer'100px [baris2-akhir] / 1fr 2fr 3fr;
+}
+
+.item {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(even) {
+  background-color: salmon;
+}

@@ -1,0 +1,71 @@
+/* grid-template-areas */
+/* Mendefinisikan grid template menggunakan nama dari area yang ditulis pada property grid-area pada item */
+
+/* grid-template-areas: 
+  " <nama-area> | none | '.' " 
+  " <nama-area> <nama-area> " */
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'header header header'
+    'sidebar sidebar sidebar'
+    'content content content'
+    'footer footer footer';
+}
+
+.item {
+  width: 100%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+/* .item:nth-child(even) {
+  background-color: salmon;
+} */
+
+.header {
+  grid-area: header;
+  background-color: lightblue;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: lightgreen;
+}
+
+.content {
+  grid-area: content;
+  background-color: salmon;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: gray;
+}
+
+/* Responsive Breakpoint */
+
+@media screen and (min-width: 576px) {
+  .container {
+    grid-template-areas:
+      'header header header'
+      'sidebar content content'
+      'sidebar content content'
+      'footer footer footer';
+  }
+}

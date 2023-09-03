@@ -1,0 +1,38 @@
+/* column-gap & row-gap */
+/* Menentukan ukuran grid-line/jarak antara baris atau kolom */
+
+/* column-gap: <line-size>; */
+/* row-gap: <line-size>; */
+
+/* Shorthand */
+/* grid: <grid-template-rows> <grid-template-columns> <grid-templates-areas> <grid-auto-rows> <grid-auto-columns> <grid-auto-flow>; */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.container {
+  width: 90%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-column-gap: 10px; */
+  /* column-gap: 10px;
+  row-gap: 10px; */
+  gap: 10px;
+}
+
+.item {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 100px;
+}
+
+.item:nth-child(even) {
+  background-color: salmon;
+}
