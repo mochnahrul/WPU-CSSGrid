@@ -10,7 +10,8 @@
 /* <track-size> -> Bisa berupa px, %, auto atau fr (fraction) */
 /* <line-name> -> Nama yang bisa diberikan pada track */
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #ddd;

@@ -7,7 +7,8 @@
 /* Shorthand */
 /* grid: <grid-template-rows> <grid-template-columns> <grid-templates-areas> <grid-auto-rows> <grid-auto-columns> <grid-auto-flow>; */
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #ddd;

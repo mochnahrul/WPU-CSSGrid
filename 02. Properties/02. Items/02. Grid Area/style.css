@@ -4,7 +4,8 @@
 
 /* grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>; */
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #ddd;
@@ -17,9 +18,9 @@ html, body {
   grid-template-columns: minmax(200px, 300px) 1fr 1fr;
   grid-template-rows: repeat(3, 100px);
   grid-template-areas:
-    'header header header'
-    'sidebar content content'
-    'footer footer footer';
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
 }
 
 .item {

@@ -9,7 +9,8 @@
 
 /* grid-auto-flow: row | column | row dense | column dense; */
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #ddd;

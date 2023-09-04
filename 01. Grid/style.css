@@ -1,6 +1,7 @@
 /* CSS Grid adalah modul CSS baru untuk mendefinisikan sistem layout berbentuk grid dalam dua dimensi (baris & kolom) */
 
-html, body {
+html,
+body {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;

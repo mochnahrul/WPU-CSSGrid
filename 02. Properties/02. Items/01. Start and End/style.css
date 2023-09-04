@@ -18,7 +18,8 @@
 /* grid-column: <start-line> / <end-line> | <start-line> / span <value>;  */
 /* grid-row: <start-line> / <end-line> | <start-line> / span <value>;  */
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #ddd;
